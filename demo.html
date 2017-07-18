@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>P2 Learnin</title>
+  <style>
+    .tab {
+      font-size: 24px;
+    }
+    .current {
+      background: red;
+    }
+    .panel {
+      display: none;
+    }
+    .panel.current {
+      display: block;
+    }
+  </style>
+  <script src="https://rawgit.com/drupal/drupal/8.4.x/core/assets/vendor/domready/ready.min.js"></script>
+  <script src="https://rawgit.com/drupal/drupal/8.4.x/core/misc/drupal.es6.js"></script>
+  <script src="https://rawgit.com/drupal/drupal/8.4.x/core/misc/drupal.init.es6.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1 id="hello">Hello world.</h1>
+
+  <div class="tab-wrapper">
+    <button class="tab" data-tab="tab-1">First</button>
+    <button class="tab" data-tab="tab-2">Second</button>
+    <button class="tab" data-tab="tab-3">Third</button>
+    <button class="tab" data-tab="tab-4">Fourth</button>
+    <button class="tab" data-tab="tab-5">Fifth</button>
+
+    <div class="panel" data-panel="tab-1">content 1</div>
+    <div class="panel" data-panel="tab-2">content 2</div>
+    <div class="panel" data-panel="tab-3">content 3</div>
+    <div class="panel" data-panel="tab-4">content 4</div>
+    <div class="panel" data-panel="tab-5">content 5</div>
+  </div>
+
+  <div class="tab-wrapper">
+    <button class="tab" data-tab="tab-1">First</button>
+    <button class="tab" data-tab="tab-2">Second</button>
+    <button class="tab" data-tab="tab-3">Third</button>
+    <button class="tab" data-tab="tab-4">Fourth</button>
+    <button class="tab" data-tab="tab-5">Fifth</button>
+
+    <div class="panel" data-panel="tab-1">content 1</div>
+    <div class="panel" data-panel="tab-2">content 2</div>
+    <div class="panel" data-panel="tab-3">content 3</div>
+    <div class="panel" data-panel="tab-4">content 4</div>
+    <div class="panel" data-panel="tab-5">content 5</div>
+  </div>
+
+</body>
+</html>
