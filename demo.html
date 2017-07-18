@@ -3,20 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>P2 Learnin</title>
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <style>
-    .tab {
-      font-size: 24px;
-    }
-    .current {
-      background: red;
-    }
-    .panel {
-      display: none;
-    }
-    .panel.current {
-      display: block;
+    .nav-tabs {
+      margin-bottom: 1rem;
     }
   </style>
+
   <script src="https://rawgit.com/drupal/drupal/8.4.x/core/assets/vendor/domready/ready.min.js"></script>
   <script src="https://rawgit.com/drupal/drupal/8.4.x/core/misc/drupal.es6.js"></script>
   <script src="https://rawgit.com/drupal/drupal/8.4.x/core/misc/drupal.init.es6.js"></script>
@@ -24,35 +19,87 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <h1 id="hello">Hello world.</h1>
 
-  <div class="tab-wrapper">
-    <button class="tab" data-tab="tab-1">First</button>
-    <button class="tab" data-tab="tab-2">Second</button>
-    <button class="tab" data-tab="tab-3">Third</button>
-    <button class="tab" data-tab="tab-4">Fourth</button>
-    <button class="tab" data-tab="tab-5">Fifth</button>
-
-    <div class="panel" data-panel="tab-1">content 1</div>
-    <div class="panel" data-panel="tab-2">content 2</div>
-    <div class="panel" data-panel="tab-3">content 3</div>
-    <div class="panel" data-panel="tab-4">content 4</div>
-    <div class="panel" data-panel="tab-5">content 5</div>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">P2 JS Learnin'</h1>
+    <p class="lead"><a href="https://wiki.phase2technology.com/display/TECH/Javascript+Study+Group">More info on the wiki.</a></p>
   </div>
+</div>
 
-  <div class="tab-wrapper">
-    <button class="tab" data-tab="tab-1">First</button>
-    <button class="tab" data-tab="tab-2">Second</button>
-    <button class="tab" data-tab="tab-3">Third</button>
-    <button class="tab" data-tab="tab-4">Fourth</button>
-    <button class="tab" data-tab="tab-5">Fifth</button>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
 
-    <div class="panel" data-panel="tab-1">content 1</div>
-    <div class="panel" data-panel="tab-2">content 2</div>
-    <div class="panel" data-panel="tab-3">content 3</div>
-    <div class="panel" data-panel="tab-4">content 4</div>
-    <div class="panel" data-panel="tab-5">content 5</div>
+
+      <h2>Tabs group 1</h2>
+      <div class="tab-wrapper">
+
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link tab" href="#" data-tab="tab-1">First</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tab" href="#" data-tab="tab-2">Second</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tab" href="#" data-tab="tab-3">Third</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tab" href="#" data-tab="tab-4">Fourth</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tab" href="#" data-tab="tab-5">Fifth</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane" data-pane="tab-1"><p>content 1</p></div>
+          <div role="tabpanel" class="tab-pane" data-pane="tab-2"><p>content 2</p></div>
+          <div role="tabpanel" class="tab-pane" data-pane="tab-3"><p>content 3</p></div>
+          <div role="tabpanel" class="tab-pane" data-pane="tab-4"><p>content 4</p></div>
+          <div role="tabpanel" class="tab-pane" data-pane="tab-5"><p>content 5</p></div>
+        </div>
+
+      </div>
+
+      <h2>Tabs group 2</h2>
+      <div class="tab-wrapper">
+
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link tab" href="#" data-tab="tab-1">First</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tab" href="#" data-tab="tab-2">Second</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tab" href="#" data-tab="tab-3">Third</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tab" href="#" data-tab="tab-4">Fourth</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tab" href="#" data-tab="tab-5">Fifth</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane" data-pane="tab-1"><p>content 1</p></div>
+          <div role="tabpanel" class="tab-pane" data-pane="tab-2"><p>content 2</p></div>
+          <div role="tabpanel" class="tab-pane" data-pane="tab-3"><p>content 3</p></div>
+          <div role="tabpanel" class="tab-pane" data-pane="tab-4"><p>content 4</p></div>
+          <div role="tabpanel" class="tab-pane" data-pane="tab-5"><p>content 5</p></div>
+        </div>
+
+      </div>
+
+
+    </div>
   </div>
+</div>
+
+
 
 </body>
 </html>
