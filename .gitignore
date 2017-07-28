@@ -58,3 +58,4 @@ typings/
 .env
 
 *.dist.es5.js
+.idea
