@@ -1,4 +1,4 @@
-(function iife($, Drupal) {
+(function ($, Drupal) {
   Drupal.behaviors.tabs = {
     attach: function(context) {
 
