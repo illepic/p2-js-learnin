@@ -1,0 +1,21 @@
+body {
+  background: blue;
+}
+
+#thing {
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-image: url('./images/cat.jpg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+     src:  url('./fonts/Roboto-Regular.ttf') format('truetype');
+     font-weight: 600;
+     font-style: normal;
+   }
+
+.hello {
+  font-family: Roboto;
+}
